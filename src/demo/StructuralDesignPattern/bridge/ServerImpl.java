@@ -9,7 +9,7 @@ public class ServerImpl implements Server{
 
     @Override
     public boolean auth(String userName, String password) {
-        // 具体验证 api 调用
+        // call specific api to auth
         return true;
     }
 }
