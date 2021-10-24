@@ -1,7 +1,7 @@
 package demo.BehavioralDesignPatterns.iterator;
 
 /**
- * @author cartoon.yu
+ * @author cartoon
  * @date 2021/10/23 15:32
  */
 public class ArrayCollection<T> implements Collection<T>{
