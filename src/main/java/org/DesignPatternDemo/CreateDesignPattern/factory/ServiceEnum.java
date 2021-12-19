@@ -12,8 +12,8 @@ import org.DesignPatternDemo.CreateDesignPattern.factory.sample.SampleService;
  */
 public enum ServiceEnum {
 
-    PLUS("plus", new MultipartServiceImpl()),
-    MULTIPART("multipart", new PlusServiceImpl());
+    PLUS("plus", new PlusServiceImpl()),
+    MULTIPART("multipart", new MultipartServiceImpl());
 
     private String method;
 
