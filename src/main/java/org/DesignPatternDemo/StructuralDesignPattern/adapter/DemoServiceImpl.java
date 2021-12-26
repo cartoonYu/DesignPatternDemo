@@ -9,12 +9,14 @@ import java.util.Random;
  */
 public class DemoServiceImpl implements DemoService {
 
+    @Override
     public String adapterMethod(String msg){
         System.out.println("to be adapter");
         Random random = new Random();
         return msg + random.nextInt();
     }
 
+    @Override
     public String process(String msg){
         System.out.println(msg);
         return msg;
