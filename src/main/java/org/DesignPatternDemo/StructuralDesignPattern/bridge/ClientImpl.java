@@ -13,7 +13,6 @@ public class ClientImpl implements Client {
 
     @Override
     public boolean auth(String userName, String password) {
-        Auth auth = new Auth();
         auth.setUserName(userName)
                 .setPassword(password);
         return bridgeFlow.auth(userName, password, this.getClass());
@@ -21,10 +20,11 @@ public class ClientImpl implements Client {
 
     @Override
     public Auth getAuth() {
-        return null;
+        return auth;
     }
 
     public ClientImpl() {
         bridgeFlow = new BridgeFlow();
+        auth = new Auth();
     }
 }

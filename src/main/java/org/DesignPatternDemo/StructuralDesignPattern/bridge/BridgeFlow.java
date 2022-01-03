@@ -11,14 +11,12 @@ import java.util.Optional;
  */
 public class BridgeFlow {
 
-    private Map<String, String> clientToServerRelate;
+    private Map<String, Server> clientToServerRelate;
 
     public boolean auth(String userName, String password, Class clientClass){
         return Optional.of(clientToServerRelate.get(clientClass.getSimpleName()))
-                .map(serverName -> {
+                .map(server -> {
                     try {
-                        Class serverClass = Class.forName(serverName);
-                        Server server = (Server) serverClass.newInstance();
                         return server.auth(userName, password);
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -29,6 +27,6 @@ public class BridgeFlow {
 
     public BridgeFlow() {
         clientToServerRelate = new HashMap<>();
-        clientToServerRelate.put("ClientImpl", "ServerImpl");
+        clientToServerRelate.put("ClientImpl", new ServerImpl());
     }
 }
