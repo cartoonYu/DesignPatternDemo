@@ -1,6 +1,7 @@
 package org.DesignPatternDemo.StructuralDesignPattern.decorator;
 
-import java.util.Optional;
+
+import static java.util.Optional.ofNullable;
 
 /**
  * @author cartoon
@@ -15,7 +16,7 @@ public class BufferDecoratorImpl implements Decorator {
 
     @Override
     public String read(String fileName) {
-        return Optional.of(bufferOperate.read(fileName))
+        return ofNullable(bufferOperate.read(fileName))
                 .orElse(decorator.read(fileName));
     }
 
