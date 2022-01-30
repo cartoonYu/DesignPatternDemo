@@ -2,7 +2,7 @@ package org.design.pattern.demo.StructuralDesignPattern;
 
 import org.DesignPatternDemo.StructuralDesignPattern.composite.OperateService;
 import org.DesignPatternDemo.StructuralDesignPattern.composite.OperateServiceImpl;
-import org.design.pattern.demo.BaseTest;
+import org.design.pattern.demo.base.BaseTest;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

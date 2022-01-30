@@ -22,5 +22,6 @@ public class ArrayCollectionIterator implements Iterator{
 
     public ArrayCollectionIterator(ArrayCollection arrayCollection) {
         this.arrayCollection = arrayCollection;
+        index = 0;
     }
 }

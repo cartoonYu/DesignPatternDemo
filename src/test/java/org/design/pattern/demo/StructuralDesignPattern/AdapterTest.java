@@ -4,7 +4,7 @@ import org.DesignPatternDemo.StructuralDesignPattern.adapter.DemoService;
 import org.DesignPatternDemo.StructuralDesignPattern.adapter.DemoServiceImpl;
 import org.DesignPatternDemo.StructuralDesignPattern.adapter.ImplementAdapter;
 import org.DesignPatternDemo.StructuralDesignPattern.adapter.InheritAdapter;
-import org.design.pattern.demo.BaseTest;
+import org.design.pattern.demo.base.BaseTest;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

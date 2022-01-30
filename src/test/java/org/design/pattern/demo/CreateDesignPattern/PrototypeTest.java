@@ -1,7 +1,7 @@
 package org.design.pattern.demo.CreateDesignPattern;
 
 import org.DesignPatternDemo.CreateDesignPattern.prototype.Prototype;
-import org.design.pattern.demo.BaseTest;
+import org.design.pattern.demo.base.BaseTest;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package org.design.pattern.demo;
+package org.design.pattern.demo.base;
 
 import org.junit.platform.runner.JUnitPlatform;
 import org.junit.platform.suite.api.SelectPackages;

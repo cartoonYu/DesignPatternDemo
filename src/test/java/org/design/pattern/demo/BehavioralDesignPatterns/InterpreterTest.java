@@ -3,7 +3,7 @@ package org.design.pattern.demo.BehavioralDesignPatterns;
 import org.DesignPatternDemo.BehavioralDesignPatterns.interpreter.AddExpression;
 import org.DesignPatternDemo.BehavioralDesignPatterns.interpreter.Expression;
 import org.DesignPatternDemo.BehavioralDesignPatterns.interpreter.NumberExpression;
-import org.design.pattern.demo.BaseTest;
+import org.design.pattern.demo.base.BaseTest;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

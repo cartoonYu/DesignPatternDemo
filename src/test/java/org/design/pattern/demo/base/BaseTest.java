@@ -1,4 +1,4 @@
-package org.design.pattern.demo;
+package org.design.pattern.demo.base;
 
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.TestMethodOrder;
