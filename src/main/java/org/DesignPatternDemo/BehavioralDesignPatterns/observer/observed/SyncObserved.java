@@ -22,6 +22,6 @@ public class SyncObserved implements Observed {
     }
 
     public SyncObserved(ObserverRegister observerRegister) {
-        observerRegister = new ObserverRegisterImpl();
+        this.observerRegister = observerRegister;
     }
 }

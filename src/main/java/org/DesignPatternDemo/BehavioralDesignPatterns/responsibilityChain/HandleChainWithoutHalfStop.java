@@ -18,6 +18,7 @@ public class HandleChainWithoutHalfStop implements Handler{
         for(Handler handler : handlerList){
             handleRes = handler.handle(pojo);
             pojo.getHandleRes().put(handler, handleRes);
+            System.out.println("handle chain without half stop, handle result: " + handleRes);
         }
         return handleRes;
     }
