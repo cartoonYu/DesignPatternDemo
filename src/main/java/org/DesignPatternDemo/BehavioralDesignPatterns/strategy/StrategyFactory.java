@@ -1,9 +1,6 @@
 package org.DesignPatternDemo.BehavioralDesignPatterns.strategy;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -32,7 +29,7 @@ public class StrategyFactory {
     }
 
     public StrategyFactory(){
-        strategyList = Arrays.asList(StrategyEnum.values());
+        strategyList = Arrays.stream(StrategyEnum.values()).collect(Collectors.toList());
         strategyMap = Arrays.stream(StrategyEnum.values()).collect(Collectors.toMap(StrategyEnum::getClassType, StrategyEnum::getImplementStrategy));
     }
 }
